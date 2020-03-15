@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.col {
+  width: 100%;
+  margin-right: 10px;
+  padding: 10px;
+}
+.col {
+  margin-right: 0px;
+}
+
+.box {
+  min-height: 200px;
+  background: lightcoral;
+}
+
+nav {
+  width: 98vw;
+  position: fixed;
+  background: black;
+  left: 50%;
+  z-index: 10;
+  top: 1vw;
+  transform: translate(-50%, 0);
+  transition: 0.13s;
+}
+
+.slider {
+  min-height: 100vh;
+  background: lightblue;
+  width: 100%;
+  position: relative;
+}
+
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: 1.5s;
+}
+
+.buy-ticket {
+  position: absolute;
+  min-height: 60vh;
+  min-width: 20vw;
+  right: 10%;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: black;
+}
+
+.buy-ticket .tab-header {
+  overflow: auto;
+}
+.buy-ticket .tab-header h5 {
+  float: left;
+  width: 80px;
+  text-align: center;
+  padding: 5px 0px;
+  color: white;
+}
+
+.buy-ticket .tab-content div {
+  color: white;
+}
+
+.d-flex {
+  display: flex;
+}
+
+ul {
+  color: white;
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: black;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid white;
+  position: relative;
+}
+
+ul li:hover {
+  background: red;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+li:hover .sub-menu {
+  max-height: 100vh;
+}
+
+.the-other-sub-menu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  max-height: 0;
+  transition: 0.13s;
+  overflow: hidden;
+  width: 100%;
+}
+
+.sub-menu:hover {
+  overflow: initial;
+}
+
+.sub-menu li:hover .the-other-sub-menu {
+  max-height: 100vh;
+}
