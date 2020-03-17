@@ -20,6 +20,24 @@
 .box {
   min-height: 200px;
   background: lightcoral;
+  display: flex;
+  justify-content: center;
+}
+
+.about-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  border-radius: 100%;
+  background: white;
+}
+
+.resize {
+  width: 50px;
+  height: auto;
 }
 
 nav {
